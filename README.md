@@ -1,11 +1,11 @@
 # Borrowed Time
 _~5 minute read_
 
-An in-chip countermeasure for static side-channel analysis attacks built for deployment in FPGAs. 
+An in-chip countermeasure against static side-channel analysis attacks, built for deployment in FPGAs. 
 
 
 ### Basic principles of use and security relevance
-Static side-channel analysis exploits leakage of circuit state elements while their stored values are not changing. Typically inducing such a state requires stopping the circuit input clock. Our countermeasure serves to monitor the clock signal and upon detecting a stop condition, immediately wipe sensitive register contents in a secure manner. 
+Static side-channel analysis exploits leakage of circuit state elements while their stored values are not changing. Typically, inducing such a state requires stopping the circuit input clock. Our countermeasure serves to monitor the clock signal and upon detecting a stop condition, immediately wipe sensitive register contents in a secure manner. 
 
 ## Paper report
 These designs are artefacts of research that has been published in a paper titled _On Borrowed Time – Preventing Static Side-Channel Analysis_, to appear in [NDSS '25]([https://www.usenix.org/conference/usenixsecurity23](https://www.ndss-symposium.org/ndss2025/)). Preprint available online [here](https://github.com/0xADE1A1DE/Borrowed-Time/...) or [arXiv]([https://arxiv.org/abs/2211.01109](https://arxiv.org/abs/2307.09001)).
@@ -19,10 +19,10 @@ Each instance is designed for implementation on a specific target IC since the c
 
 Porting these designs to other targets requires some additional engineering, namely to ensure the delay-chain circuits are correctly tuned. See paper for more information. 
 
-## Author of original core
+## Author of original cores
 These applications are based on ...
 
-## Author of injector modifications
+## Author of Borrowed Time modifications
 [Robbie Dumitru](https://robbiedumitru.github.io/) - Ruhr University Bochum and The University of Adelaide, 2024.
 
 ## Copyright and license

@@ -8,14 +8,14 @@ An in-chip countermeasure against static side-channel analysis attacks, built fo
 Static side-channel analysis exploits leakage of circuit state elements while their stored values are not changing. Typically, inducing such a state requires stopping the circuit input clock. Our countermeasure serves to monitor the clock signal and upon detecting a stop condition, immediately wipe sensitive register contents in a secure manner. 
 
 ## Paper report
-These designs are artefacts of research that has been published in a paper titled _On Borrowed Time – Preventing Static Side-Channel Analysis_, to appear in [NDSS '25]([https://www.usenix.org/conference/usenixsecurity23](https://www.ndss-symposium.org/ndss2025/)). Preprint available online [here](https://github.com/0xADE1A1DE/Borrowed-Time/...) or [arXiv]([https://arxiv.org/abs/2211.01109](https://arxiv.org/abs/2307.09001)).
+These designs are artefacts of research that has been published in a paper titled _On Borrowed Time – Preventing Static Side-Channel Analysis_, to appear in [NDSS '25](https://www.ndss-symposium.org/ndss2025/) ([https://www.usenix.org/conference/usenixsecurity23](https://www.ndss-symposium.org/ndss2025/)). Preprint available online [here](https://github.com/0xADE1A1DE/Borrowed-Time/...) or [arXiv]([https://arxiv.org/abs/2211.01109](https://arxiv.org/abs/2307.09001)).
 
 ## Protected targets
 This repo contains design files for two cryptographic systems that implemented directly in hardware, each of which is equipped with the Borrowed Time countermeasure.
 Each instance is designed for implementation on a specific target IC since the countermeasure operates based on the physical properties of the underlying technology.
 
-- `AES128' - Round-based implementation - No other side-channel analysis countermeasures - deployment on Xilinx Kintex 7
-- `SKINNY-128-128' - first-order masking protection - deployment on Xilinx Spartan 6
+- `AES128` - No other side-channel analysis countermeasures - deployment on Xilinx Kintex 7
+- `SKINNY-128-128` - first-order masking protection - deployment on Xilinx Spartan 6
 
 Porting these designs to other targets requires some additional engineering, namely to ensure the delay-chain circuits are correctly tuned. See paper for more information. 
 
@@ -35,7 +35,7 @@ These applications can be freely modified, used, and distributed as long as the 
 
 ## Acknowledgements
 #### This project was supported by:  
-* 
+* an ARC Discovery Early Career Researcher Award number DE200101577
+* an ARC Discovery Project number DP210102670
 * the Defence Science and Technology Group (DSTG), Australia under Agreement ID10620
-* the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy - EXC 2092 CASA - 390781972.
-* 
+* the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy - EXC 2092 CASA - 390781972

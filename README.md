@@ -18,10 +18,11 @@ Each instance is designed for implementation on a specific target IC since the c
 
 Porting these designs to other targets requires some additional engineering, namely to ensure the delay-chain circuits are correctly tuned. See paper for more information. 
 
-## Author of original cores
-These applications are based on open third-party cryptographic cores:
-- `AES` core based on _sasebo_giii_aes_ core found [here](https://satoh.cs.uec.ac.jp/SAKURA/hardware/SAKURA-X.html)
-- `SKINNY` core based on _MSKSkinny_encrypt_ core found [here](https://github.com/uclcrypto/aead_modes_leveled_hw)
+## Authors of original cores
+These applications are based on open third-party cores:
+- `AES` core found [here](https://satoh.cs.uec.ac.jp/SAKURA/hardware/SAKURA-X.html)
+- `SKINNY` core found [here](https://github.com/uclcrypto/aead_modes_leveled_hw)
+- `Trivium` PRNG core found [here](https://github.com/uclcrypto/randomness_for_hardware_masking)
 
 ## Copyright and license
 Original source:

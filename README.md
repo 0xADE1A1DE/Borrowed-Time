@@ -13,7 +13,7 @@ These designs are artefacts of research that has been published in a paper title
 This repo contains design files for two cryptographic systems that are implemented directly in hardware, each of which is equipped with the Borrowed Time countermeasure.
 Each instance is designed for implementation on a specific target IC since the countermeasure operates based on the physical properties of the underlying technology.
 
-- `AES128` - no other side-channel analysis countermeasures - deployment on Xilinx Kintex-7 (XC7K160T-1FBG676C)
+- `AES128` - no other countermeasures - deployment on Xilinx Kintex-7 (XC7K160T-1FBG676C)
 - `SKINNY-128-128` - first-order masking protection - deployment on Xilinx Spartan-6 (XC6SLX75-2CSG484C)
 
 Porting these designs to other targets requires some additional engineering, namely to ensure the delay-chain circuits are correctly tuned. See paper for more information. 

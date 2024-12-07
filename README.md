@@ -1,5 +1,4 @@
 # Borrowed Time
-_~2 minute read_
 
 An in-chip countermeasure against static side-channel analysis attacks, built for deployment in FPGAs. 
 

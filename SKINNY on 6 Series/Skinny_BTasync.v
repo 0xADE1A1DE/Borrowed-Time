@@ -39,12 +39,12 @@ module Skinny_BTasync(
 	//			
 	//			Delay chain made up of Q_out, Q_out0, ..., Q_out90
 	//			these correspond to c0, c1, ..., cn in paper (Figure 4)
-	//			they sit between delay elements: LUT1_inst, ... LUT1_inst2900
+	//			they sit between delay elements: LUT5_inst, ... LUT5_inst90
 	//			taps on the chain fed are the inputs to the above listed LUTs
 	//			
 	//			Delayed edge delay chain made up of Q_out_dp0, ..., Q_out_dp49
 	//			these correspond to s0, s1, ..., sm in paper (Figure 4)
-	//			they sit between delay elements: LUT1_dpinst0, ... LUT5_dpinst50
+	//			they sit between delay elements: LUT5_dpinst0, ... LUT5_dpinst50
 	//
 	//			PRNG instantiated in Skinny_128_128_d2_TriviumPRNGBT module
 	//

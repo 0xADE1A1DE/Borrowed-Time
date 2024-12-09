@@ -98,14 +98,14 @@ module CHIP_SASEBO_GIII_AES
    //			LUT6_1, LUT6_2, LUT6_3, LUT6_4, LUT6_5, LUT6_6
    //			all of which are input to LUT6_7, whose output is stop_detect
    //			
-   //			Delay chain made up of Q_out, Q_out0, ..., Q_out2900
+   //			Delay chain made up of Q_out, Q_out0, ..., Q_out1900
    //			these correspond to c0, c1, ..., cn in paper (Figure 4)
-   //			they sit between delay elements: LUT1_inst, ... LUT1_inst2900
+   //			they sit between delay elements: LUT1_inst, ... LUT1_inst1900
    //			taps on the chain fed are the inputs to the above listed LUTs
    //			
-   //			Delayed edge delay chain made up of Q_out_dp0, ..., Q_out_dp999
+   //			Delayed edge delay chain made up of Q_out_dp0, ..., Q_out_dp50
    //			these correspond to s0, s1, ..., sm in paper (Figure 4)
-   //			they sit between delay elements: LUT1_dpinst0, ... LUT1_dpinst1000
+   //			they sit between delay elements: LUT1_dpinst0, ... LUT1_dpinst50
    //
    //			PRNG, clk_mux, & data_mux all built into AES_Composite_enc module
    //

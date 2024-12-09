@@ -1,6 +1,6 @@
 # Borrowed Time
 
-An in-chip countermeasure against static side-channel analysis attacks, built for deployment in FPGAs. 
+An in-chip countermeasure against static side-channel analysis attacks, built for deployment in FPGAs.
 
 ### Basic principles of use and security relevance
 Static side-channel analysis exploits leakage of circuit state elements while their stored values are not changing. Typically, inducing such a state requires stopping the circuit input clock. Our countermeasure serves to monitor the clock signal and upon detecting a stop condition, immediately wipe sensitive register contents in a secure manner. 

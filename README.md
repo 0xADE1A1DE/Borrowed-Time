@@ -6,7 +6,7 @@ An in-chip countermeasure against static side-channel analysis attacks, built fo
 Static side-channel analysis exploits leakage of circuit state elements while their stored values are not changing. Typically, inducing such a state requires stopping the circuit input clock. Our countermeasure serves to monitor the clock signal and upon detecting a stop condition, immediately wipe sensitive register contents in a secure manner. 
 
 ## Paper report
-These designs are artefacts of research that has been published in a paper titled _On Borrowed Time – Preventing Static Side-Channel Analysis_, to appear in [NDSS '25](https://www.ndss-symposium.org/ndss2025/). Preprint available online [here](https://github.com/0xADE1A1DE/Borrowed-Time/...) or [arXiv]([https://arxiv.org/abs/2211.01109](https://arxiv.org/abs/2307.09001)).
+These designs are artefacts of research that has been published in a paper titled _On Borrowed Time – Preventing Static Side-Channel Analysis_, to appear in [NDSS '25](https://www.ndss-symposium.org/ndss2025/). Preprint available online [here](https://robbiedumitru.github.io/PDFs/DumitruMWY24.pdf) or [arXiv]([https://arxiv.org/abs/2211.01109](https://arxiv.org/abs/2307.09001)).
 
 ## Protected targets
 This repo contains design files for two cryptographic systems that are implemented directly in hardware, each of which is equipped with the Borrowed Time countermeasure.
